@@ -121,7 +121,8 @@ public class ModeloTablaInsectos implements TableModel {
 //Debemos recuperar e objeto, pero debemos definirlo con lo que pusimos en column
         switch (columnIndex){
             case 0:
-                //De los datos, vamos a obtener el renglon columna con rowindex y columnindex, para obtener el objeto en el espacio a modificar, pondremos.set y adentro el valor que me están mandando (aValue), acompañado de un casting porque
+                //De los datos, vamos a obtener el renglon columna con rowindex y columnindex, para obtener el objeto en el espacio a modificar,
+                //pondremos.set y adentro el valor que me están mandando (aValue), acompañado de un casting porque
                 // el dato llega siendo de tipo objeto, y en realidad tiene que ser string, int, o el caso que sea.
                 datos.get(rowIndex).setID((Integer) aValue);
             case 1:
